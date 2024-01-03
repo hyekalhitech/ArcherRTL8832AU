@@ -5,18 +5,20 @@ TP Link Archer TX20 Plus (Wifi 6) Driver and added custom patch to make it work 
 ![Logo](hyekalhitech.png)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/hyekalhitech/equine-tracker)](https://github.com/hyekalhitech/equine-tracker/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/hyekalhitech/equine-tracker)](https://github.com/hyekalhitech/equine-tracker/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/hyekalhitech/equine-tracker)](https://github.com/hyekalhitech/equine-tracker/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/hyekalhitech/equine-tracker)](https://github.com/hyekalhitech/equine-tracker/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/hyekalhitech/ArcherRTL8832AU)](https://github.com/hyekalhitech/ArcherRTL8832AU/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/hyekalhitech/ArcherRTL8832AU)](https://github.com/hyekalhitech/ArcherRTL8832AU/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/hyekalhitech/ArcherRTL8832AU)](https://github.com/hyekalhitech/ArcherRTL8832AU/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/hyekalhitech/ArcherRTL8832AU)](https://github.com/hyekalhitech/ArcherRTL8832AU/pulls)
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Special Thanks](#Special)
 3. [Installation](#Installation)
-4. [License](#license)
-5. [Acknowledgments](#acknowledgments)
+4. [Tested Distro](#Tested)
+5. [Known Issues](#Known)
+6. [License](#license)
+7. [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
@@ -107,11 +109,19 @@ Step 9, test monitor mode
 sudo airmon-ng start <interfacename>
 ```
 
-
 Step 10, Test packet injection
 ```bash
 sudo aireplay-ng --test <interfacename>
 ```
+## Tested Distro
+
+- Kali Linux (2023.4)
+- Parrot Security Edition
+- BlackArch
+
+## Known Issues
+- Turning on/off monitor mode many times in a short period will make the system freeze. Still figure it out why, when its freeze, you have to force restart the PC/Laptop.
+
 ## License
 
 refer to the [LICENSE](LICENSE) file.
