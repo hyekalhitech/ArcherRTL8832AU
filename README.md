@@ -1,14 +1,14 @@
 # ArcherRTL8832AU
 TP Link Archer TX20 Plus (Wifi 6) Driver and added custom patch to make it work on latest Linux distro. 
-# Equine Tracker
+# TP Link Archer TX20U Plus AX1800
 
 ![Logo](hyekalhitech.png)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/equine-tracker)](https://github.com/yourusername/equine-tracker/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/yourusername/equine-tracker)](https://github.com/yourusername/equine-tracker/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/yourusername/equine-tracker)](https://github.com/yourusername/equine-tracker/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/yourusername/equine-tracker)](https://github.com/yourusername/equine-tracker/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/hyekalhitech/equine-tracker)](https://github.com/hyekalhitech/equine-tracker/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/hyekalhitech/equine-tracker)](https://github.com/hyekalhitech/equine-tracker/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/hyekalhitech/equine-tracker)](https://github.com/hyekalhitech/equine-tracker/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/hyekalhitech/equine-tracker)](https://github.com/hyekalhitech/equine-tracker/pulls)
 
 ## Table of Contents
 
@@ -24,13 +24,9 @@ TP Link Archer TX20 Plus (Wifi 6) use Realtek 8832AU Chipset which is NOT a In-L
 
 ## Special Thanks To the Developer and the contributor who ACTUALLY make this works !
 
-Equine Tracker comes with a wide range of features tailored for horse care:
-
 - **<a href="https://github.com/lwfinger">lwfinger</a></p>**   : For Creating The Driver On Linux
 - **<a href="https://github.com/dovandung">dovandung</a></p>** : For Sharing the line code that need to change (To make Injection mode Working!).
 - **<a href="https://github.com/JeCuRoz">JeCuRoz</a></p>**     : For sharing the injection code patch !
-
-For a detailed guide on using these features, refer to our [User Manual](docs/user-manual.md).
 
 ## Installation Guide
 
