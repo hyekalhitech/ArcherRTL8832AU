@@ -1,5 +1,6 @@
 # ArcherRTL8832AU
 ==================
+
 TP Link Archer TX20 Plus (Wifi 6) Driver and added custom patch to make it work on latest Linux distro. 
 
 # TP Link Archer TX20U Plus AX1800
@@ -14,7 +15,6 @@ TP Link Archer TX20 Plus (Wifi 6) Driver and added custom patch to make it work 
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/hyekalhitech/ArcherRTL8832AU)](https://github.com/hyekalhitech/ArcherRTL8832AU/pulls)
 
 ## Table of Contents
-
 - [ArcherRTL8832AU](#archerrtl8832au)
 - [TP Link Archer TX20U Plus AX1800](#tp-link-archer-tx20u-plus-ax1800)
   - [Table of Contents](#table-of-contents)
@@ -25,7 +25,7 @@ TP Link Archer TX20 Plus (Wifi 6) Driver and added custom patch to make it work 
   - [Known Issues](#known-issues)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
-  - [Updated on 03/01/2024](#updated-on-03012024)
+  - [Updated on 04/01/2024](#updated-on-04012024)
 
 ## Introduction
 
@@ -39,7 +39,8 @@ TP Link Archer TX20 Plus (Wifi 6) use Realtek 8832AU Chipset which is NOT a In-L
 
 ## Installation Guide
 
-Step 1, Update & Install
+**Step 1** 
+Update & Install
 
 Requirements
 You will need to install "make", "gcc", "kernel headers", "kernel build essentials", and "git".
@@ -53,7 +54,8 @@ Clone the repository:
 
 If any of the packages above are not found check if your distro installs them like that.
 
-Step 2, Downloading the driver
+**Step 2**
+Downloading the driver
 
 For all distros:
 
@@ -61,13 +63,15 @@ For all distros:
 git clone https://github.com/lwfinger/rtl8852au.git
 ```
 
-Step 3, Downloading the patch (Packet Injection is working)
+**Step 3**
+Downloading the patch (Packet Injection is working)
 
 ```bash
 git clone https://github.com/hyekalhitech/ArcherRTL8832AU.git
 ```
 
-Step 4, Rename the patch file.
+**Step 4**
+Rename the patch file.
 If you're already download the patch file, you may notice that got 2 different file in there, you have to rename the files by removing the "patch_"
 
 1. patch_drv_conf.h
@@ -78,13 +82,15 @@ Rename to :-
 1. drv_conf.h
 2. rtw_xmit.c
 
-Step 5, move the patch files into the downloaded driver directory.
+**Step 5**
+Move the patch files into the downloaded driver directory.
 
 ```bash
 mv drv_conf.h /rtl8852au/core/
 mv rtw_xmit.c /rtl8852au/include/
 ```
-Step 6, Build & Install the driver
+**Step 6**
+Build & Install the driver
 
 When a USB device is plugged in, or detected at boot, this rule causes the utulity
 usb_modeswitch to unload any 0bda:1a2b devices that it finds. If you have a
@@ -105,18 +111,22 @@ git pull
 make
 sudo make install
 ```
-Step 7, Unplug and plug back the TP-Link device (For Live Usb) OR Reboot (Installed Host)
+**Step 7**
+Unplug and plug back the TP-Link device (For Live Usb) OR Reboot (Installed Host)
 
-Step 8, check the interface.
+**Step 8**
+Check the interface.
 ```bash
 sudo airmon-ng
 ```
-Step 9, test monitor mode
+**Step 9**
+Test monitor mode
 ```bash
 sudo airmon-ng start <interfacename>
 ```
 
-Step 10, Test packet injection
+**Step 10**
+Test packet injection
 ```bash
 sudo aireplay-ng --test <interfacename>
 ```
@@ -137,4 +147,4 @@ refer to the [LICENSE](LICENSE) file.
 
 I would like to thank you to the developer and the contributors for sharing their valuable knowledge and sharing the info.
 
-## Updated on 03/01/2024 ##
+## Updated on 04/01/2024 ##
