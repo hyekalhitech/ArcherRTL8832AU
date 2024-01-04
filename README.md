@@ -12,13 +12,17 @@ TP Link Archer TX20 Plus (Wifi 6) Driver and added custom patch to make it work 
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Special Thanks](#Special)
-3. [Installation](#Installation)
-4. [Tested Distro](#Tested)
-5. [Known Issues](#Known)
-6. [License](#license)
-7. [Acknowledgments](#acknowledgments)
+- [ArcherRTL8832AU](#archerrtl8832au)
+- [TP Link Archer TX20U Plus AX1800](#tp-link-archer-tx20u-plus-ax1800)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Special Thanks To the Developer and the contributor who ACTUALLY make this works !](#special-thanks-to-the-developer-and-the-contributor-who-actually-make-this-works-)
+  - [Installation Guide](#installation-guide)
+  - [Tested Distro](#tested-distro)
+  - [Known Issues](#known-issues)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+  - [Updated on 03/01/2024](#updated-on-03012024)
 
 ## Introduction
 
