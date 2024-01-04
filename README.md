@@ -1,8 +1,9 @@
 # ArcherRTL8832AU
-
+==================
 TP Link Archer TX20 Plus (Wifi 6) Driver and added custom patch to make it work on latest Linux distro. 
 
 # TP Link Archer TX20U Plus AX1800
+==================================
 
 ![Logo](hyekalhitech.png)
 
