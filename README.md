@@ -25,7 +25,7 @@ TP Link Archer TX20 Plus (Wifi 6) Driver and added custom patch to make it work 
   - [Known Issues](#known-issues)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
-  - [Updated on 04/01/2024](#updated-on-04012024)
+  - [Updated on 05/01/2024](#updated-on-05012024)
 
 ## Introduction
 
@@ -86,8 +86,8 @@ Rename to :-
 Move the patch files into the downloaded driver directory.
 
 ```bash
-mv drv_conf.h /rtl8852au/core/
-mv rtw_xmit.c /rtl8852au/include/
+mv drv_conf.h /rtl8852au/include/
+mv rtw_xmit.c /rtl8852au/core/
 ```
 **Step 6**
 Build & Install the driver
@@ -147,4 +147,4 @@ refer to the [LICENSE](LICENSE) file.
 
 I would like to thank you to the developer and the contributors for sharing their valuable knowledge and sharing the info.
 
-## Updated on 04/01/2024 ##
+## Updated on 05/01/2024 ##
